@@ -1,0 +1,174 @@
+/* 
+Minimalistic dark, black, electric blue color scheme
+
+#0B0C10
+#1F2833
+#C5C6C7
+#66FCF1
+#45A29E
+
+Corporate and Traditional
+
+#88BDBC
+#254E58
+#112D32
+#4F4A41
+#6E6658
+font: #F3FFEB
+
+Source: https://visme.co/blog/website-color-schemes/
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body {
+    height: 100%;
+    background-color: #1F2833;
+    color: #C5C6C7;
+    background: url("/img/background.png");
+}
+
+.nav {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #0B0C10;
+}
+
+.nav > a {
+    color: #66FCF1;
+}
+
+.nav > a:hover {
+    color: #45A29E;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #0B0C10;
+    color: #66FCF1;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#topBtn:hover {
+    background-color: #C5C6C7;
+}
+
+.arrow {
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+#downloadCV {
+    border: 4px solid #66FCF1;
+    background-color: #0B0C10;
+    /* color: #C5C6C7; */
+    color: #66FCF1;
+    padding: 20px;
+    margin: 40px;
+}
+
+#downloadCV:hover {
+    border: 4px solid #45A29E;
+    color: #45A29E;
+}
+
+#downloadCV:active {
+    transform: scale(0.95);
+}
+
+footer {
+    border: 1px solid black;
+    background: #45A29E;
+    color: #C5C6C7;
+    padding: 40px;
+}
+
+.hidden-link {
+    display: none;
+}
+
+.socialMediaIcon {
+    padding: 60px;
+    font-size: 160px;
+    text-decoration: none;
+}
+
+.socialMediaIcon:hover {
+    transform: scale(1.1);
+}
+
+.socialMediaIcon:active {
+    transform: scale(0.9);
+}
+
+.fa-linkedin {
+    color: #007bb5;
+}
+
+.fa-github {
+    /* color: #24292e; */
+    color: #C5C6C7;
+}
+
+.fa-xing {
+    color: #0698A0;
+}
+
+.fa-envelope {
+    color: #777;
+}
